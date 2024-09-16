@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('./assets/fonts/WorkSans-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./assets/fonts/WorkSans-Italic.woff2') format('woff2'),
+    url('./assets/fonts/WorkSans-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./assets/fonts/WorkSans-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/WorkSans-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./assets/fonts/WorkSans-Bold.woff2') format('woff2'),
+    url('./assets/fonts/WorkSans-Bold.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.15;
+    background-color: #00CCDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.box{
+    display: flex;
+    gap: 20px;
+}
+.left, .right{
+    border: 2px dashed #6439FF;
+    width: 310px;
+    min-height: 410px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list{
+    width: 100%;
+    padding: 15px;
+    background-color: #4F75FF;
+    /* color: #FFFFFF; */
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.list::before{
+    content: "";
+    height: 16px;
+    width: 18px;
+    background: url('./assets/images/menu.png') no-repeat;
+    background-size: contain;
+    z-index: 9999;
+    position: relative;
+}
